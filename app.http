@@ -1,0 +1,27 @@
+GET http://localhost:3000/todos/?search_q=Finalize
+###
+GET http://localhost:3000/todos/2/
+
+###
+POST http://localhost:3000/todos/
+Content-Type: application/json
+
+{
+    "id":10,
+    "todo":"Finalize",
+    "priority":"LOW",
+    "status":"TO DO"
+}
+
+###
+PUT http://localhost:3000/todos/2/
+Content-Type: application/json
+
+{
+    "status":"DONE"
+   
+}
+
+###
+
+DELETE http://localhost:3000/todos/2/
